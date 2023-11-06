@@ -4,14 +4,13 @@
 #include <time.h>
 
 int isPrime(unsigned long long int num) {
-	if(num<=1) {return 0;} // 1 and lower aren't primes
+	if(num<=1) {return 0;}
 	unsigned long int sqrtnum = ceil(sqrt(num));
 	for(unsigned long long int i = 2; i<=sqrtnum; i++) {
 		if(num==i) {
 			return 1;
 		}
-		if(num%i==0) { //loop through
-			printf("%u\n", i);
+		if(num%i==0) {
 			return 0;
 		}
 	}
