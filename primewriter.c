@@ -12,7 +12,6 @@ int isPrime(unsigned long long int num) {
 			return 1;
 		}
 		if(num%i==0) { //loop through
-			printf("%u\n", i);
 			return 0;
 		}
 	}
